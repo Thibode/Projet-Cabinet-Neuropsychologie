@@ -1,0 +1,93 @@
+* {
+  font-family: "Kodchasan", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.contact {
+  text-align: justify;
+  margin: 100px 150px 100px 150px;
+}
+.contact h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  margin-bottom: 0;
+  color: #474747;
+}
+.underline {
+  width: 80px;
+  height: 2px;
+  background-color: #e74040;
+  margin: 5px 0 65px 0;
+}
+.infocontact p {
+  font-size: 18px;
+  margin: 0 30px 20px 30px;
+  line-height: 30px;
+}
+.separation {
+  height: 1px;
+  background-color: rgb(0, 0, 0, 0.2);
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.formulairecontact {
+  margin: 50px;
+}
+.formulairecontact h2 {
+  font-family: "Kodchasan", sans-serif;
+  text-align: center;
+  color: #e74040;
+  font-size: 26px;
+  margin: 50px;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+}
+fieldset {
+  border: none;
+}
+.hautform {
+  width: 100%;
+  text-align: center;
+  height: auto;
+}
+.hautformad {
+  text-align: left;
+  margin: 20px 0px 20px 0px;
+}
+input {
+  border: 0.5px solid rgb(0, 0, 0, 0.2);
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+textarea {
+  margin: 20px;
+  border: 0.5px solid rgb(0, 0, 0, 0.2);
+  padding: 5px;
+  border-radius: 5px;
+}
+button {
+  background: #e74040;
+  color: #fff;
+  text-align: center;
+  height: 50px;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+}
+button:hover {
+  background: #cf2a2a;
+}
+.btn {
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  float: right;
+}

@@ -1,0 +1,67 @@
+* {
+  font-family: "Kodchasan", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.information {
+  text-align: justify;
+  margin: 100px 150px 200px 150px;
+}
+.information h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  margin-bottom: 0;
+  color: #474747;
+}
+.underline {
+  width: 80px;
+  height: 2px;
+  background-color: #e74040;
+  margin: 5px 0 65px 0;
+}
+.textintro {
+  font-size: 18px;
+  margin: 0 30px 40px 30px;
+  line-height: 30px;
+}
+.important a {
+  color: #e74040;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+.textlist {
+  font-style: italic;
+  margin: 50px 80px;
+}
+.information ul {
+  margin: 50px 100px;
+  line-height: 50px;
+}
+.information ul li a {
+  font-style: normal;
+  font-weight: bold;
+  color: #e96060;
+  text-decoration: none;
+}
+.information ul li a:hover {
+  color: #f02c2c;
+  transition: 0.5s;
+}
+.textconclu {
+  margin: 50px 30px;
+}
+.textconclu a {
+  color: #e96060;
+  text-decoration: none;
+}
+.textconclu a:hover {
+  color: #f02c2c;
+  transition: 0.5s;
+}
+.listimg {
+  display: flex;
+  flex-flow: row nowrap;
+}

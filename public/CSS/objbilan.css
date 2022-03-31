@@ -1,0 +1,51 @@
+* {
+  font-family: "Kodchasan", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.objbilan {
+  margin: 100px 150px 200px 150px;
+}
+.objbilan h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  margin-bottom: 0;
+  color: #474747;
+}
+.underline {
+  width: 80px;
+  height: 2px;
+  background-color: #e74040;
+  margin: 5px 0 65px 0;
+}
+.objbilan p {
+  font-size: 16px;
+  margin-right: 0;
+  text-align: justify;
+}
+.imgplace {
+  float: left;
+  margin: 0;
+}
+.change {
+  margin-right: 10px;
+  color: #e74040;
+}
+
+@media (max-width: 1233px) {
+  .objbilan {
+    margin: 70px;
+  }
+  .imgplace {
+    float: none;
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
+  .list {
+    text-align: none;
+    line-height: 30px;
+  }
+}

@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.globalProfil {
+  margin: 50px 40px 40px 40px;
+}
+.orgaItem {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.informationPerso {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.formProfil {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.formProfil .btn {
+  margin-left: 110px;
+}
+.informationSite {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.telechargement {
+  box-sizing: border-box;
+  width: 50%;
+  margin-bottom: 20px;
+  height: 300px;
+}
+.telechargement .container {
+  overflow: hidden;
+}
+.rdv {
+  width: 50%;
+  margin-bottom: 20px;
+  height: 300px;
+  border: 2px solid #000;
+  border-radius: 10px;
+}

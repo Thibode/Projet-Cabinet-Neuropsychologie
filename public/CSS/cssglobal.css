@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../FONT/Roboto/Roboto-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Kodchasan";
+  src: url("../FONT/Kodchasan/Kodchasan-Medium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.global {
+  text-align: justify;
+  margin: 100px 150px 100px 150px;
+}
+.global h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  margin-bottom: 0;
+  color: #474747;
+}
+.underline {
+  width: 80px;
+  height: 2px;
+  background-color: #e74040;
+  margin: 5px 0 65px 0;
+}
+.important p {
+  color: #e74040;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.global p {
+  font-size: 18px;
+  margin: 0 100px 30px 100px;
+}
+.stage {
+  text-align: justify;
+  margin: 100px 300px 100px 300px;
+}
+.stage p {
+  margin-top: 20px;
+}
+.imgglobal {
+  margin: 20px;
+  text-align: center;
+}
+.imgglobal img {
+  width: 290px;
+  height: 250px;
+}
+.list {
+  margin: 0 50px 0 50px;
+  line-height: 20px;
+}
+.list p {
+  margin: 30px 0;
+}
+.list img {
+  /* position: relative; */
+  margin: auto;
+  float: right;
+  width: 250px;
+  height: 250px;
+}
+.important a {
+  color: #e74040;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+.note p {
+  font-size: 12px;
+  margin-left: 10px;
+}
+.notecolor {
+  color: #e74040;
+}
+.positionimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.positionimg img {
+  width: 250px;
+  margin: 10px 0 10px 0;
+}
+.change {
+  margin-right: 10px;
+  color: #e74040;
+}
+.note p {
+  font-size: 12px;
+  margin-left: 10px;
+}
+.notecolor {
+  color: #e74040;
+}
+
+@media (max-width: 1870px) {
+  .global p {
+    margin: 50px 50px 50px 50px;
+  }
+}
+@media (max-width: 1233px) {
+  .global {
+    margin: 100px;
+  }
+  .list {
+    margin: 50px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 960px) {
+  .global {
+    margin: 50px;
+  }
+  .list {
+    margin: 10px;
+    line-height: 20px;
+  }
+  .list img {
+    display: none;
+    position: relative;
+    margin: 0 20px;
+    float: right;
+    width: 250px;
+    height: 250px;
+  }
+}

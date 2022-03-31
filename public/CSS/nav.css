@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "Kodchasan";
+  src: url("../FONT/Kodchasan/Kodchasan-Medium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Kodchasan", sans-serif;
+}
+.headernavigation {
+  display: flex;
+  align-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  padding: 0;
+  background: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.headernavigation .logo img {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  bottom: 10px;
+  width: 330px;
+  height: 80px;
+}
+.headernavigation nav {
+  margin: 20px 0px 30px 25%;
+}
+.headernavigation nav ul {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+.headernavigation nav ul li {
+  list-style: none;
+  position: sticky;
+  margin: 0 5px 0 5px;
+}
+.headernavigation nav ul li.sub-menu:before {
+  content: "▼";
+  position: absolute;
+  line-height: 50px;
+  right: 5px;
+}
+.headernavigation nav ul li.active.sub-menu:before {
+  content: "▲";
+}
+.headernavigation nav ul li ul {
+  position: absolute;
+  left: 0;
+  background: #eee;
+  display: none;
+}
+.headernavigation nav ul li.active ul {
+  display: block;
+  width: 350px;
+}
+.headernavigation nav ul li ul li {
+  display: block;
+  width: 350px;
+}
+.headernavigation nav ul li a {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: #000;
+  text-decoration: none;
+  display: inline;
+}
+.headernavigation nav ul li a:hover,
+.headernavigation nav ul li a.active {
+  color: rgb(231, 57, 57);
+}
+.menu-toggle {
+  color: rgb(187, 49, 49);
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 90%;
+  display: none;
+}
+@media (max-width: 1870px) {
+  .headernavigation .logo img {
+    position: absolute;
+    left: 50%;
+    margin-left: -175px;
+    top: 10px;
+    bottom: 10px;
+    width: 330px;
+    height: 80px;
+  }
+  .headernavigation nav {
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  .headernavigation nav ul {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+  }
+}
+@media (max-width: 1233px) {
+  .headernavigation {
+    padding: 0 20px;
+  }
+  .headernavigation .logo img {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    bottom: 10px;
+    margin: 5px 10px 0 0;
+    width: 290px;
+    height: 70px;
+  }
+  .headernavigation .menu-toggle {
+    display: block;
+    top: 0;
+    margin-top: 20px;
+    height: 80px;
+  }
+  .headernavigation nav {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: #fff;
+    top: 15px;
+    right: -100%;
+    transition: 0.5s;
+  }
+  .headernavigation nav.active {
+    right: 0;
+    width: 100%;
+  }
+
+  .headernavigation nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+  }
+  .headernavigation nav ul a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .headernavigation nav ul li.active ul {
+    position: relative;
+    background: #eee;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .headernavigation nav ul li ul li {
+    width: 100%;
+  }
+}

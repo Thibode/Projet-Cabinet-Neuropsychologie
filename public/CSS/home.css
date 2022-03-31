@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kodchasan", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+/* Partie bandeau accueil + texte */
+.bandeauaccueil {
+  display: inline-block;
+  height: 400px;
+  width: 100%;
+  background-image: url(../medias/illustration-bg-header.png);
+}
+.textimage {
+  margin-top: 8%;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+}
+.textimage h1 {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.05em;
+}
+/* Partie accueil + texte + image */
+.bienvenueaccueil {
+  display: inline-block;
+  margin: 100px 50px 100px 50px;
+  height: 800px;
+  text-align: center;
+  line-height: 30px;
+}
+.bienvenueaccueil h1 {
+  font-size: 55px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+  color: #474747;
+}
+.bienvenueaccueil p {
+  display: inline-block;
+  line-height: 50px;
+  font-size: 22px;
+  margin: 0 150px 0 150px;
+}
+.colortext,
+.legendecolor {
+  color: #e74040;
+}
+.photobregeonhelene {
+  margin: 50px 0 50px 0;
+}
+.photobregeonhelene img {
+  width: 370px;
+  height: 350px;
+  border-radius: 100px;
+}
+.legendephoto p {
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px;
+}
+/*Bandeau de séparation pour les différentes partie*/
+.separationbandeau {
+  display: inline-block;
+  margin: 80px 0 120px 0;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(90deg, #1b1919 0%, #4b4b4b 50%, #342f2f 80%);
+}
+/*Partie présentation*/
+.presentation {
+  text-align: justify;
+  margin: 0 50px 50px 50px;
+}
+.presentation h1 {
+  font-size: 55px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+  color: #474747;
+  text-align: center;
+}
+.presentation p {
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0 100px 30px 100px;
+}
+.presentation img {
+  float: left;
+  margin: 20px 20px 20px 100px;
+}
+/*Lien vers les structures*/
+.adapei {
+  display: flex;
+  align-content: space-around;
+  flex-direction: row;
+  justify-content: center;
+}
+.adapei img {
+  margin-top: 20px;
+  height: 139px;
+  width: 162px;
+}
+
+.centrehospi1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px 0 50px 0;
+}
+.centrehospi1 img {
+  height: 100px;
+  width: 120px;
+  margin: 0 10px 0 10px;
+}
+.centrehospi2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+.centrehospimg1 img {
+  height: 100px;
+  width: 250px;
+}
+.centrehospimg2 img {
+  height: 150px;
+  width: 200px;
+}
+@media (max-width: 1233px) {
+  .bandeauaccueil {
+    display: none;
+  }
+  .bienvenueaccueil p {
+    width: 100%;
+    margin: 0 40px 30px 40px;
+  }
+  .presentation p {
+    width: 100%;
+    margin: 0 30px 30px 0;
+  }
+}
+@media (max-width: 970px) {
+  .bienvenueaccueil p {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .presentation img {
+    margin: 10px;
+  }
+}
