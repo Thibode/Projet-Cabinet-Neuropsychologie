@@ -27,7 +27,7 @@
             via le formulaire de contact.
         </p>
         <div class="photobregeonhelene">
-            <img src="./public/medias/Photo-identité-3-750x500.jpg" />
+            <img src="./public/medias/Photo-identité-3-750x500.jpg" alt="Photo Hélène Brégeon" />
         </div>
         <div class="legendephoto">
             <p>
@@ -50,7 +50,7 @@
             Claude Bernard de Lyon 1.
         </p>
 
-        <img src="./public/medias/Illustration-logo-300x257.png" />
+        <img src="./public/medias/Illustration-logo-300x257.png" alt="illustration home" />
 
         <p>
             Mes expériences professionnelles m’ont amené à me spécialiser dans
@@ -89,22 +89,23 @@
     <div class="adapei">
         <a
             href="https://www.adapei49.asso.fr/etablissements/inclusion-scolaire-accompagnement-et-soins-t1/ime-chantemerle-e7"><img
-                src="./public/medias/logo2_9-300x257.png" /></a>
+                src="./public/medias/logo2_9-300x257.png" alt="adapei49" /></a>
         <a href="https://www.adapei72.asso.fr/etablissement/ime-du-val-de-loir/"><img
-                src="./public/medias/logo_adapei_TRANS-300x207.png" /></a>
+                src="./public/medias/logo_adapei_TRANS-300x207.png" alt="adapei7" /></a>
     </div>
     <div class="centrehospi1">
         <a href="https://www.ch-nevers.fr/fr"><img src="./public/medias/Illustration-CH-Nevers-300x239.jpg" /></a>
-        <a href="http://www.ch-redon-carentoir.fr/page-d-accueil-3.html"><img
-                src="./public/medias/logo_new-250x250.jpg" /></a>
+        <a href="http://www.ch-redon-carentoir.fr/page-d-accueil-3.html"><img src="./public/medias/logo_new-250x250.jpg"
+                alt="chu nevers" /></a>
         <a href="https://www.chu-nantes.fr/"><img src="./public/medias/1920px-Logo_CHU_Nantes.svg_-300x204.png" /></a>
     </div>
     <div class="centrehospi2">
         <div class="centrehospimg1">
-            <a href="https://www.gh-re.fr/"><img src="./public/medias/Illustration-CH-Saint-Malo.png" /></a>
+            <a href="https://www.gh-re.fr/"><img src="./public/medias/Illustration-CH-Saint-Malo.png"
+                    alt="chu saint malo" /></a>
         </div>
         <div class="centrehospimg2">
-            <a href="https://www.chfontenaylecomte.fr/"><img
-                    src="./public/medias/Illustration-CH-Fontenay-la-Comte.png" /></a>
+            <a href="https://www.chfontenaylecomte.fr/"><img src="./public/medias/Illustration-CH-Fontenay-la-Comte.png"
+                    alt="chu fontenay la comte" /></a>
         </div>
     </div>

@@ -3,7 +3,7 @@ ob_start();
 ?>
 <div class="headernavigation">
     <div class="logo">
-        <img src="http://localhost/Projet-Cabinet-Neuropsychologie/public/medias/logoaccueil.png" />
+        <img src="http://localhost/Projet-Cabinet-Neuropsychologie/public/medias/logoaccueil.png" alt="logo cabinet" />
     </div>
     <!-- Navigation principale du site -->
     <nav>
