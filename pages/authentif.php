@@ -15,7 +15,7 @@
                     <input class="textconnexion" type="password" id="pass" name="pass" placeholder="Mot de passe"
                         required />
                     <div class="imgPassword">
-                        <img id="eye" src="./public/medias/eye.svg" onclick="affiche()">
+                        <img id="eye" src="./public/medias/eye.svg" alt="afficher mot de passe" onclick="affiche()">
                     </div>
                 </div>
             </div>

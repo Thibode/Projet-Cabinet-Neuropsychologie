@@ -19,7 +19,7 @@
             déroulent individuellement avec le patient uniquement. Les tests choisis par le neuropsychologue sont
             élaborés, normés et validés. Ils sont adaptés à l’âge du patient et à sa problématique.
         </p>
-        <img src="./public/medias/Illustration-déroulement-du-bilan.png">
+        <img src="./public/medias/Illustration-déroulement-du-bilan.png" alt="Illustration">
         <p>
             <span class="change">♦</span><strong>la cotation, l’interprétation et la rédaction d’un compte-rendu
                 complet.</strong> :

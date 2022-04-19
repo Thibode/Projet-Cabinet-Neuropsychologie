@@ -24,7 +24,7 @@
             </p>
         </div>
         <div class="positionimg">
-            <img src="./public/medias/Illustration-les-objectifs-du-bilan-300x284.png" />
+            <img src="./public/medias/Illustration-les-objectifs-du-bilan-300x284.png" alt="Illustration" />
         </div>
         <p>
             Le neuropsychologue choisit le type de bilan adapté à la demande du patient. Il est régulièrement nécessaire

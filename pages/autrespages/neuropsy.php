@@ -7,7 +7,7 @@
             supérieurs et le fonctionnement cérébral</strong>.
     </p>
     <div class="imgglobal">
-        <img src="./public/medias/Illustration-neuropsychologie-1-300x270.png" />
+        <img src="./public/medias/Illustration-neuropsychologie-1-300x270.png" alt="Illustration" />
     </div>
     <p>
         La neuropsychologie s’intéresse aux désordres des fonctions cognitives
@@ -28,7 +28,7 @@
         validation d’une Licence et d’un Master II professionnel de Psychologie.
     </p>
     <div class="imgglobal">
-        <img src="./public/medias/Illustration-neuropsychologie-2-300x236.png" />
+        <img src="./public/medias/Illustration-neuropsychologie-2-300x236.png" alt="Illustration" />
     </div>
     <p>
         Il travaille en lien avec les autres professionnels : médicaux

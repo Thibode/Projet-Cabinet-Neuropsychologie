@@ -17,9 +17,9 @@
             </ul>
         </div>
         <div class="imgplace">
-            <img src="./public/medias/Illustration-horaire-matin-300x260.png" />
+            <img src="./public/medias/Illustration-horaire-matin-300x260.png" alt="illustration" />
 
-            <img src="./public/medias/Illustration-horaire-am-300x276.png" />
+            <img src="./public/medias/Illustration-horaire-am-300x276.png" alt="illustration" />
         </div>
     </div>
 

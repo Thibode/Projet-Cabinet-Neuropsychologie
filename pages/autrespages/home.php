@@ -94,10 +94,12 @@
                 src="./public/medias/logo_adapei_TRANS-300x207.png" alt="adapei7" /></a>
     </div>
     <div class="centrehospi1">
-        <a href="https://www.ch-nevers.fr/fr"><img src="./public/medias/Illustration-CH-Nevers-300x239.jpg" /></a>
+        <a href="https://www.ch-nevers.fr/fr"><img src="./public/medias/Illustration-CH-Nevers-300x239.jpg"
+                alt="CHU Nevers" /></a>
         <a href="http://www.ch-redon-carentoir.fr/page-d-accueil-3.html"><img src="./public/medias/logo_new-250x250.jpg"
-                alt="chu nevers" /></a>
-        <a href="https://www.chu-nantes.fr/"><img src="./public/medias/1920px-Logo_CHU_Nantes.svg_-300x204.png" /></a>
+                alt="chu Redon Carentoir" /></a>
+        <a href="https://www.chu-nantes.fr/"><img src="./public/medias/1920px-Logo_CHU_Nantes.svg_-300x204.png"
+                alt="CHU Nantes" /></a>
     </div>
     <div class="centrehospi2">
         <div class="centrehospimg1">

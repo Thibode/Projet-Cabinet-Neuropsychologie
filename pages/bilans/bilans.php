@@ -20,7 +20,7 @@
             </ul>
         </div>
         <div class="imgplace">
-            <img src="./public/medias/Illustration-les-bilans-accueil-300x279.png" />
+            <img src="./public/medias/Illustration-les-bilans-accueil-300x279.png" alt="Illustration" />
         </div>
     </div>
 

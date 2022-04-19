@@ -6,8 +6,7 @@
         include('./models/fichier.php');
         require('utils/db.php');
 
-        if (Lien::afficheLienUser($pdo)) {
-        }
+        Lien::afficheLienUser($pdo)
 
         ?>
     </div>

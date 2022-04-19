@@ -8,7 +8,7 @@
         (neuropsychologie). Un justificatif pourra vous être fourni afin d’effectuer vos remboursements.
     </p>
     <div class="imgglobal">
-        <img src="./public/medias/Illustration-tarifs-300x239.png">
+        <img src="./public/medias/Illustration-tarifs-300x239.png" alt="illustration">
     </div>
     <div class="list">
         <p>

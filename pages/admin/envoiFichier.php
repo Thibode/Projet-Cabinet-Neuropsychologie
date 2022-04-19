@@ -43,8 +43,8 @@ if (isset($_POST['postEditId'])) {
     <div class="result">
 
         <?php
-        if (Fichier::download($_FILES, $_POST, $pdo)) {
-        }
+        Fichier::download($_FILES, $_POST, $pdo)
+
         ?>
     </div>
 </div>

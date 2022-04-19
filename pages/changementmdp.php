@@ -8,7 +8,7 @@
                     <input class="textconnexion" type="password" id="pass" name="pass"
                         placeholder="Nouveau mot de passe" required />
                     <div class="imgPassword">
-                        <img id="eye" src="./public/medias/eye.svg" onclick="affiche()">
+                        <img id="eye" src="./public/medias/eye.svg" alt="affiche mot de passe" onclick="affiche()">
                     </div>
                 </div>
             </div>
@@ -18,7 +18,7 @@
                     <input class="textconnexion" type="password" id="pass" name="pass"
                         placeholder="Confirmer mot de passe" required />
                     <div class="imgPassword">
-                        <img id="eye" src="./public/medias/eye.svg" onclick="affiche()">
+                        <img id="eye" src="./public/medias/eye.svg" alt="affiche mot de passe" onclick="affiche()">
                     </div>
                 </div>
             </div>
