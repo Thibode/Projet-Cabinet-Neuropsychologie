@@ -27,6 +27,12 @@
 .formProfil .btn {
   margin-left: 110px;
 }
+.formProfil > h3{
+  margin-top: 20px;
+}
+.formProfil > .form-group{
+  margin-top: 10px;
+}
 .informationSite {
   width: 50%;
   height: auto;
@@ -38,6 +44,8 @@
   width: 50%;
   margin-bottom: 20px;
   height: 300px;
+  border: 2px solid #000;
+  border-radius: 10px;
 }
 .telechargement .container {
   overflow: hidden;

@@ -11,7 +11,7 @@ $ville = htmlspecialchars($_POST['ville']);
 
 /*info contact */
 
-$mail = htmlspecialchars($_POST['email']);
+$mail = htmlspecialchars($_POST['mail']);
 $tel = htmlspecialchars($_POST['tel']);
 
 /*info mot de passe*/
@@ -21,8 +21,7 @@ $confirm_pwd = htmlspecialchars($_POST['confirm-password']);
 
 try {
 
-    $stmt = $pdo->prepare('UPDATE utilisateurs SET nom_utilisateur=?, prenom_utilisateur=?, adresse_utilisateur=?, codepostal_utilisateur=?, ville_utilisateur=?, mail_utilisateur=?, tel_utilisateur=?, mdp_utilisateur=?
-    WHERE id_utilisateur=?');
+    $stmt = $pdo->prepare('UPDATE utilisateurs SET nom_utilisateur=?, prenom_utilisateur=?, adresse_utilisateur=?, codepostal_utilisateur=?, ville_utilisateur=?, mail_utilisateur=?, tel_utilisateur=?, mdp_utilisateur=? WHERE id_utilisateur=?');
 
     $stmt->execute([$nom, $prenom, $adresse, $cp, $ville, $mail, $tel, password_hash($pwdHash, PASSWORD_DEFAULT), $_SESSION['id']]);
 

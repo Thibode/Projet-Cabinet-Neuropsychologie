@@ -22,9 +22,9 @@ class Telechargement
     {
         $session = $_SESSION['id'];
 
-        $req = $pdoP->prepare('SELECT libelle_pdf, exo_regle_pdf FROM pdf INNER JOIN telecharger ON pdf.id_pdf = telecharger.id_pdf INNER JOIN utilisateurs ON utilisateurs.id_utilisateur = telecharger.id_utilisateur WHERE utilisateurs.id_utilisateur=? GROUP BY libelle_pdf;');
-        $req->execute([$session]);
-        $afficheData = $req->fetchAll(PDO::FETCH_ASSOC);
+        $stmt = $pdoP->prepare('SELECT libelle_pdf, exo_regle_pdf FROM pdf INNER JOIN telecharger ON pdf.id_pdf = telecharger.id_pdf INNER JOIN utilisateurs ON utilisateurs.id_utilisateur = telecharger.id_utilisateur WHERE utilisateurs.id_utilisateur=? GROUP BY libelle_pdf;');
+        $stmt->execute([$session]);
+        $afficheData = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         echo "<div class='container mt-3'>
         <table class='table'>
@@ -48,7 +48,9 @@ class Telechargement
         </table>
         </div>";
     }
-    public static function histoTelechargelent($pdoP)
+
+    // nom util table util / groupe util table groupe util / nom fichier table pdf / date table telecharger
+    public static function histoTelechargement($pdoP)
     {
     }
 }

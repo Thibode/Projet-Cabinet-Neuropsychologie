@@ -2,17 +2,17 @@
 <main>
     <h1>S'inscrire</h1>
     <div class="inscription">
-        <form method="post" action="index.php?page=register">
+        <form method="post" action="index.php?page=register" id="register-form">
             <div class="champ positionText">
                 <label for="firstname"></label>
                 <input class="textinscription" type="text" id="firstname" name="firstname" placeholder="Prenom" />
             </div>
             <div class="champ positionText">
-                <label for="name"></label>
+                <label for="lastname"></label>
                 <input class="textinscription" type="text" id="name" name="name" placeholder="Nom" />
             </div>
             <div class="champ positionText">
-                <label for="mail"></label>
+                <label for="email"></label>
                 <input class="textinscription" type="email" id="mail" name="mail" placeholder="Adresse Mail" required
                     pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$" />
             </div>
@@ -21,12 +21,12 @@
                 <input class="textinscription" type="mobile" id="phone" name="phone" placeholder="N° de Téléphone" />
             </div>
             <div class="champ positionText">
-                <label for="pass"></label>
+                <label for="password"></label>
                 <input class="textinscription" type="password" id="pass" name="pass" placeholder="Mot de passe"
                     required />
             </div>
             <div class="champ positionText">
-                <label for="pass"></label>
+                <label for="confirm_Password"></label>
                 <input class="textinscription" type="password" id="pass" name="pass"
                     placeholder="Confirmation Mot de passe" required />
             </div>
@@ -59,3 +59,57 @@
         </form>
     </div>
 </main>
+<script>
+$("#register-form").validate({
+    rules: {
+
+        firstname: "required",
+        lastname: "required",
+        email: {
+            required: true,
+            email: true
+        },
+        password: {
+            required: true,
+            minlength: 8,
+            maxlength: 16
+        },
+        confirm_Password: {
+            minlength: 8,
+            maxlength: 16,
+            equalTo: "#password"
+        }
+    },
+    messages: {
+        firstname: "Vous n'avez de prénom",
+        lastname: "Vous n'avez pas de nom",
+        email: {
+            required: "Votre devez renseigné votre e-mail",
+            email: "Votre adresse email n'est pas une adresse valide"
+        },
+        password: {
+            required: "Vous n'avez pas de rentré de mot de passe",
+            minlength: "Veuillez rentré au moins 8 caractères",
+            maxlength: "Veuillez rentré au maxiumum 16 caractères"
+        },
+        confirm_Password: {
+            minlength: "Veuillez rentré au moins 8 caractères",
+            maxlength: "Veuillez rentré au maxiumum 16 caractères",
+            equalTo: "Vous n'avez pas rentré le même mot de passe"
+        },
+    },
+    errorClass: "invalid",
+    submitHandler: function(form) {
+        if (form.valid()) {
+            form.submit();
+        }
+        return false;
+    },
+});
+$.validator.addMethod('email', function(value) {
+    if (value.length > 0) {
+        return /^[^@\s]+@[^@\s]+.[^@\s]+$/.test(value);
+    }
+    return true;
+}, "Votre adresse email n'est pas une adresse valide");
+</script>

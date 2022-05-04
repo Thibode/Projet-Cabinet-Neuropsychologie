@@ -1,5 +1,6 @@
 <?php
 include('models/telechargement.php');
+include('functions/rendezvousUse.php');
 require('utils/db.php');
 ?>
 <div class="globalProfil">
@@ -15,40 +16,40 @@ require('utils/db.php');
                 <!--Champ pour le nom-->
                 <div class="form-group">
                     <input type="text" name="lastname" id="lastname" tabindex="1" class="form-control"
-                        placeholder="Nom de famille" value="<?php echo $_SESSION['nom'] ?>" required="true">
+                        placeholder="Nom de famille" value="<?php echo $_SESSION['nom']; ?>" required="true">
                 </div>
                 <!--Champ pour le prenom-->
                 <div class="form-group">
                     <input type="text" name="firstname" id="firstname" tabindex="1" class="form-control"
-                        placeholder="Prénom" value="<?php echo $_SESSION['prenom'] ?>" required="true">
+                        placeholder="Prénom" value="<?php echo $_SESSION['prenom']; ?>" required="true">
                 </div>
                 <!--Champ pour l'adresse-->
                 <div class="form-group">
                     <input type="text" name="adresse" id="adresse" tabindex="1" class="form-control"
-                        placeholder="Adresse" value="<?php echo $_SESSION['adresse'] ?>" required="true">
+                        placeholder="Adresse" value="<?php echo $_SESSION['adresse']; ?>" required="true">
                 </div>
                 <!--Champ pour le codepostal-->
                 <div class="form-group">
                     <input type="text" name="codepostal" id="codepostal" tabindex="1" class="form-control"
-                        placeholder="Code Postal" value="<?php echo $_SESSION['codepostal'] ?>" required="true">
+                        placeholder="Code Postal" value="<?php echo $_SESSION['codepostal']; ?>" required="true">
                 </div>
                 <!--Champ pour la Ville-->
                 <div class="form-group">
                     <input type="text" name="ville" id="ville" tabindex="1" class="form-control" placeholder="Ville"
-                        value="<?php echo $_SESSION['ville'] ?>" required="true">
+                        value="<?php echo $_SESSION['ville']; ?>" required="true">
                 </div>
 
                 <h3>Moyen de contact</h3>
 
                 <!--Champ pour le mail-->
                 <div class="form-group">
-                    <input type="email" name="email" id="email" tabindex="1" class="form-control"
-                        placeholder="Adresse email" value="<?php echo $_SESSION['mail'] ?>" required="true">
+                    <input type="email" name="mail" id="email" tabindex="1" class="form-control"
+                        placeholder="Adresse email" value="<?php echo $_SESSION['mail']; ?>" required="true">
                 </div>
                 <!--Champ pour le telephone-->
                 <div class="form-group">
                     <input type="text" name="tel" id="tel" tabindex="1" class="form-control" placeholder="Téléphone"
-                        value="<?php echo $_SESSION['tel'] ?>" required="true">
+                        value="<?php echo $_SESSION['tel']; ?>" required="true">
                 </div>
 
                 <h3>Mot de passe</h3>
@@ -87,6 +88,9 @@ require('utils/db.php');
             <div class="underline"></div>
             <div class="rdv">
                 <!--Tableau avec les prochains rendez-vous-->
+                <?php
+                recupRendezVous($pdo);
+                ?>
             </div>
         </div>
     </div>

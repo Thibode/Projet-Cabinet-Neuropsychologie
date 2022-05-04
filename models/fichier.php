@@ -247,7 +247,7 @@ class Fichier
         // Par le suite on crée une boucle (foreach) afin d'afficher les différents fichiers uploader dans notre dossier files.
 
 
-        $req = $pdoP->prepare('SELECT libelle_pdf, doc_pdf, description_pdf FROM pdf WHERE id_cat_pdf=2 ORDER BY date_envoi_pdf DESC LIMIT 10;');
+        $req = $pdoP->prepare('SELECT id_pdf, libelle_pdf, doc_pdf, description_pdf FROM pdf WHERE id_cat_pdf=2 ORDER BY date_envoi_pdf DESC LIMIT 10;');
         $req->execute();
         $dataDoc = $req->fetchAll(PDO::FETCH_ASSOC);
 

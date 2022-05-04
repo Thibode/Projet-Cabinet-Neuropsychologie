@@ -1,4 +1,5 @@
 <?php
+ob_start();
 include('./models/fichier.php');
 require('utils/db.php');
 if (isset($_POST['envoiFichier'])) {

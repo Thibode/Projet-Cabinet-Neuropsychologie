@@ -23,7 +23,13 @@
             <div class="champ" id="button">
                 <input class="btnconnexion" type="submit" value="Se connecter" />
             </div>
-            <a href="index.php?page=mdpoublie">Mot de passe oublié ?</a>
+            <a href="#" onclick="redirection()">Mot de passe oublié ?</a>
         </form>
     </div>
 </main>
+<script>
+function redirection() {
+    const mailNameVal = $('#mail').val();
+    window.location.href = "index.php?page=mdpoublie&mail=" + mailNameVal;
+}
+</script>

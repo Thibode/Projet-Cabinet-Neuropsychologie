@@ -73,7 +73,7 @@ textarea {
   padding: 5px;
   border-radius: 5px;
 }
-button {
+/* button {
   background: #e74040;
   color: #fff;
   text-align: center;
@@ -84,7 +84,7 @@ button {
 }
 button:hover {
   background: #cf2a2a;
-}
+} */
 .btn {
   margin-top: 15px;
   border: none;
