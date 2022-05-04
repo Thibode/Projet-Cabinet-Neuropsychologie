@@ -2,9 +2,9 @@
 // Fonction qui crée l'enregistrement en BD
 function createRdv($pdoP, $vals)
 {
-    $stmt = $pdoP->prepare("INSERT INTO rendezvous(libelle_rdv, date_rdv, debut_rdv, fin_rdv, id_utilisateur)
-    VALUES (?, NOW(), ?, ?, ?)");
-    $stmt->execute([$vals['libelle_rdv'], $vals['debut_rdv'], $vals['fin_rdv']]);
+    $stmt = $pdoP->prepare("INSERT INTO rendezvous(libelle_rdv, debut_rdv, fin_rdv, id_utilisateur)
+    VALUES (?, ?, ?, ?)");
+    $stmt->execute([$vals['postlibelleRdv'], $vals['postdebRdv'], $vals['postfinRdv'], $vals['postpatientId']]);
     //Voir avec Marie les modifs à faire par rapport à ma bd et que mettre en place pour récupérer la liste des utilisateurs
     return $pdoP->lastInsertId();
 }
@@ -35,7 +35,7 @@ function recupRendezVous($pdoP)
 {
     $session = $_SESSION['id'];
 
-    $stmt = $pdoP->prepare('SELECT date_rdv, debut_rdv, fin_rdv FROM rendezvous WHERE id_utilisateur=?;');
+    $stmt = $pdoP->prepare('SELECT debut_rdv, fin_rdv FROM rendezvous WHERE id_utilisateur=?');
     $stmt->execute([$session]);
     $afficheRdv = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -43,7 +43,6 @@ function recupRendezVous($pdoP)
         <table class='table'>
         <thead class=\"thead-light\">
             <tr>
-                <th>Date</th>
                 <th>Début</th> 
                 <th>Fin</th> 
             </tr>
@@ -51,10 +50,9 @@ function recupRendezVous($pdoP)
         <tbody>";
     foreach ($afficheRdv as $AfficheRdvDate) {
         echo "<tr>
-                    <td>" . $AfficheRdvDate['date_rdv'] . "</td>
                     <td>" . $AfficheRdvDate['debut_rdv'] . "</td>
                     <td>" . $AfficheRdvDate['fin_rdv'] . "</td>
-                    </tr>";
+            </tr>";
     }
     echo "</tbody>
         </table>

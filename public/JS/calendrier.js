@@ -32,10 +32,34 @@ document.addEventListener("DOMContentLoaded", function () {
     events: {
       url: "request/listEventsCalendar.php",
     },
-    dateClick: function (info) {
-      $("#calendarModal").modal("toggle");
-      console.log(info);
+    eventClick: function (info) {
+      $("#calendarModal-editEvent").modal("toggle");
     },
   });
   calendrier.render();
+});
+
+$("#addEvent").on("click", function () {
+  $("#calendarModal").modal("toggle");
+  $("#btn-valid").click(function () {
+    const patientId = $("#patientId").val();
+    const libelleRdv = $("#libelleRdv").val();
+    const debRdv = $("#debutRdv").val();
+    const finRdv = $("#finRdv").val();
+    const remarqueRdv = $("#remarqueRdv").val();
+    $.ajax({
+      type: "POST",
+      url: "index.php?page=admin/insertRdv",
+      data: {
+        postpatientId: patientId,
+        postlibelleRdv: libelleRdv,
+        postdebRdv: debRdv,
+        postfinRdv: finRdv,
+        postremarqueRdv: remarqueRdv,
+      },
+      success: function () {
+        console.log(patientId);
+      },
+    });
+  });
 });

@@ -5,6 +5,6 @@ if (isset($_SESSION["etatConnexion"]) && $_SESSION["etatConnexion"] == 1) {
     array_push($whitelist, 'profil/telechargement', 'profil/liensutiles', 'profil/profil', 'profil/profilModif', 'deconnexion');
     //     déclarer des accès specifique admin
     if (isset($_SESSION['id_groupe_utilisateur']) && $_SESSION['id_groupe_utilisateur'] == 4) {
-        array_push($whitelist, 'admin/envoiFichier', 'admin/modiFichier', 'admin/envoiLien', 'admin/modifLien',  'admin/tableaudebord', 'admin/historiqueTelecharge', 'admin/contactDev');
+        array_push($whitelist, 'admin/envoiFichier', 'admin/modiFichier', 'admin/envoiLien', 'admin/modifLien',  'admin/tableaudebord', 'admin/historiqueTelecharge', 'admin/contactDev', 'admin/insertRdv');
     }
 }
